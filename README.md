@@ -22,24 +22,24 @@ Use live bindings to bind your FDMemTable1 component to the string grid.
 
 
 
-Repo created after fix somes issues in the original code:
-That was:
-line 79:
-Original: e: TJSONPairEnumerator;
-Changed to:  e: TJsonObject.TEnumerator;
-
-JSON Null types rise error:
-Line 134
-Original: end else if v is TJSONNull then begin
-          //- Do nothing, another record may indicate data type.
+Repo created after fix somes issues in the original code:<br>
+That was:<br>
+line 79:<br>
+Original: e: TJSONPairEnumerator;<br>
+Changed to:  e: TJsonObject.TEnumerator;<br>
+<br>
+JSON Null types rise error:<br>
+Line 134<br>
+Original: end else if v is TJSONNull then begin<br>
+          //- Do nothing, another record may indicate data type.<br><br>
           
-Changed: end else if v is TJSONNull then begin
-          //- Do nothing, another record may indicate data type.
-          if (FieldDef.DataType=TFieldType.ftUnknown) then begin
-            FieldDef.DataType := TFieldType.ftString;
-          end;
-          
- And that it, works perfect.
+Changed: end else if v is TJSONNull then begin<br>
+          //- Do nothing, another record may indicate data type.<br>
+          if (FieldDef.DataType=TFieldType.ftUnknown) then begin<br>
+            FieldDef.DataType := TFieldType.ftString;<br>
+          end;<br>
+          <br>
+ And that it, works perfect.<br>
           
           
           
