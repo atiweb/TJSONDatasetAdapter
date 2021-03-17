@@ -43,7 +43,11 @@ Changed: end else if v is TJSONNull then begin<br>
           
           
           
-          
+ # A more robust solution can be found in:
+ https://github.com/danieleteti/delphimvcframework/blob/master/sources/MVCFramework.DataSet.Utils.pas <br>
+ <br>
+ as part of te DMVCFramework by Daniele Teti:<br>
+ https://github.com/danieleteti/delphimvcframework
           
           
           
